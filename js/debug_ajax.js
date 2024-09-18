@@ -1,7 +1,8 @@
+// define a function that will print GeoJSON data to the console
 function debugCallback(myData) {
     document.querySelector("#mydiv").insertAdjacentHTML('beforeend', '<br>GeoJSON data:<br>' + JSON.stringify(myData));
 }
-
+// define the debugAjax function to fetch MegaCities data
 function debugAjax() {
     fetch("data/MegaCities.geojson")
         .then(function(response) {
